@@ -1,5 +1,11 @@
 # Homework Repository
 
+### File Format
+Lets remember to name files or folders for homework with a dash followed by your first name and last name initial before submitting a pull request
+* File: `assignment-KyleL.js`
+* Folder: `/homework2-KyleL`
+
+### Setup
 1. Our submission for homework will be set up in a similar fashion to our class repository setup. Our homework repository will be located [here](https://git.generalassemb.ly/kyleta/jsr-202-hw). Once again we will want to fork this repository, clone it to your local computer, add the upstream, push up to your repository, and a new step will be submit a pull request to turn in your homework.
 2. The fork button is located in the top right of the repository page.
 3. Click the green drop down button labeled "Code." Copy the link provided.
