@@ -35,3 +35,6 @@ $ git push origin master
 9. Here is where its a little different. To turn in your homework go to your repository on Github and click on the tab "Pull Request." Select "New Pull Request."
 10. If there are differences between the class homework repository and your homework repository, you should see it there and the "Create Pull Request" button should be available.
 11. Give it an appropriate title like "(YOUR NAME) Homework" and you are all set
+
+
+[])(homework-process.png)
