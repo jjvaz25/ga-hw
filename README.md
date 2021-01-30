@@ -24,6 +24,7 @@ $ git pull upstream master
     5. then press enter
 
 If no message is needed, go ahead and just type `:qa`. A default message will be created
+
 8. To push up work, we will do the same normal process of git which is add, commit and push
 ```
 $ git add -A
