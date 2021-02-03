@@ -1,1 +1,3 @@
-# Homework 1
+## Homework 1: Madlibs
+
+For this assignment, you'll create your own Startup Generator app. Open the files in the [madlib with loops folder](starter-code/madlib-with-loops) and start by reading the "instructions.md" file. You'll learn how to use helper methods and for loops. We have provided some starter code; while we haven't covered functions and DOM manipulation yet, this is a good chance for you to challenge yourself and get a head start on these topics.
