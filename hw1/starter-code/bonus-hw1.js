@@ -1,5 +1,5 @@
 // 1. Print out the phrase "C'mon hit me" with the following array
-
+let joker = ['C\'mon', 'hit', 'me'];
 
 // 2. Help fill the array. Transfer all items out of the "remove" array and into the "fill"
 // Try it with a loop
