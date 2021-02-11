@@ -24,16 +24,19 @@ const saveStartup = () => {
     startup === '' ? alert('You need to generate a startup before saving it!') : 
         favMadlibs.includes(startup) ? alert('You already favorited that startup!') : 
             favMadlibs.push(startup);
-    // if (startup === '') {
-    //     alert('You need to generate a startup before saving it!')
-    // } else {
-    //     if (favMadlibs.includes(startup)) {
-    //         alert('you already favorited that startup!')
-    //     } else {
-    //         favMadlibs.push(startup);
-    //         console.log(favMadlibs);
-    //     };
-    // };
 }
 
 favStartupBtn.addEventListener('click', saveStartup);
+
+// Print favorites to an array
+const printFavoritesBtn = document.getElementById('print');
+const printStartups = () => {
+    let favStartupsList = document.getElementById('favoritesList');
+    favStartupsList.innerHTML = '';
+    favMadlibs.forEach((startup) => {
+        let listItem = document.createElement('li');
+        let newLi = favStartupsList.appendChild(listItem);
+        newLi.innerHTML = startup;
+    })
+}
+printFavoritesBtn.addEventListener('click', printStartups);
