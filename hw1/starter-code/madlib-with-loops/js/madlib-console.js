@@ -1,6 +1,9 @@
 let startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
 let startupY = ['Slack', 'Trello', 'Tesla', 'Hyperloop', 'Harvest'];
+let favMadlibs = [];
 
+
+// Minimum requirements: Create new startup button
 
 const createStartupBtn = document.getElementById('create');
 const createStartup = () => {
@@ -12,4 +15,22 @@ const createStartup = () => {
 };
 createStartupBtn.addEventListener('click', createStartup);
 
+// STRETCH GOALS
 
+// Saving madlib to an array using the "favorite Startup" button
+const favStartupBtn = document.getElementById('save');
+const saveStartup = () => {
+    let startup = document.getElementById('xForY').innerHTML;
+    if (startup === '') {
+        alert('You need to generate a startup before saving it!')
+    } else {
+        if (favMadlibs.includes(startup)) {
+            alert('you already favorited that startup!')
+        } else {
+            favMadlibs.push(startup);
+            console.log(favMadlibs);
+        };
+    };
+}
+
+favStartupBtn.addEventListener('click', saveStartup);
