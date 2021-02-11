@@ -1,5 +1,7 @@
 // 1. Print out the phrase "C'mon hit me" with the following array
 let joker = ['C\'mon', 'hit', 'me'];
+console.log(joker.join(' '));
+
 
 // 2. Help fill the array. Transfer all items out of the "remove" array and into the "fill"
 // Try it with a loop
@@ -7,8 +9,15 @@ let joker = ['C\'mon', 'hit', 'me'];
 let remove = ['take', 'this', 'stuff', 'out'];
 let fill = [];
 
+for (let i=0; i < remove.length; i++) {
+    fill.push(remove[i]);
+    remove.shift()
+};
+console.log(remove);
+console.log(fill);
 
-console.log(remove, fill); // [], ['take', 'this', 'stuff', 'out']
+
+// console.log(remove, fill); // [], ['take', 'this', 'stuff', 'out']
 
 
 // 3. Fill an array with 5 numbers
