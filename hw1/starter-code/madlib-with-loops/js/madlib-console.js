@@ -21,16 +21,19 @@ createStartupBtn.addEventListener('click', createStartup);
 const favStartupBtn = document.getElementById('save');
 const saveStartup = () => {
     let startup = document.getElementById('xForY').innerHTML;
-    if (startup === '') {
-        alert('You need to generate a startup before saving it!')
-    } else {
-        if (favMadlibs.includes(startup)) {
-            alert('you already favorited that startup!')
-        } else {
+    startup === '' ? alert('You need to generate a startup before saving it!') : 
+        favMadlibs.includes(startup) ? alert('You already favorited that startup!') : 
             favMadlibs.push(startup);
-            console.log(favMadlibs);
-        };
-    };
+    // if (startup === '') {
+    //     alert('You need to generate a startup before saving it!')
+    // } else {
+    //     if (favMadlibs.includes(startup)) {
+    //         alert('you already favorited that startup!')
+    //     } else {
+    //         favMadlibs.push(startup);
+    //         console.log(favMadlibs);
+    //     };
+    // };
 }
 
 favStartupBtn.addEventListener('click', saveStartup);
