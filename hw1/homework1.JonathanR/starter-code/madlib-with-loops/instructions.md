@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JavaScript Development: Madlibs Exercise
+Oh# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JavaScript Development: Madlibs Exercise
 
 Have you ever heard someone describe a startup as being "Like Uber for puppies" or "Like Amazon for kittens"? In this exercise, you'll be building a website that auto-generates madlib sayings like "A startup that is `X` but for `Y`". Here's what we've given you to get started:
 

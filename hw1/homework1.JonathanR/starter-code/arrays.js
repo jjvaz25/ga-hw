@@ -11,7 +11,8 @@
  * Use "image1.png", "image2.png", and "image3.png" as the array values.
  */
 
-// Your code here
+let q1 = ["image1.png" , "image2.png" , "image3.png"];
+console.log("Question 1: " + q1)
 
 /**
  * Question 2
@@ -19,7 +20,8 @@
  * in variable q2.
  */
 
-// Your code here
+let q2 = q1[0];
+console.log("Question 2: " + q2)
 
 /**
  * Question 3
@@ -27,7 +29,8 @@
  * and store it in variable q3
  */
 
-// Your code here
+let q3 = q1.length;
+console.log("Question 3: " + q3)
 
 /**
  * Question 4
@@ -35,8 +38,8 @@
  * in variable q4. Hint: How can we get the number of elements in the array?
  */
 
-
-// Your code here
+let q4 = q1[q1.lenght - 1];
+console.log('Questions 4:' + q4)
 
 
 // ____________________________________________________________________________
@@ -54,6 +57,13 @@
  * an array of numbers with values 2, 3, 4, and 5.
  */
 
+let q5 = [1, 2, 3, 4];
+for (let i = 0; i < q5.length; i++) {
+    q5[i]+=1;
+    //console.log(q5[i]+1);
+}
+console.log('Question 5: ' + q5);
+
 // Your code here
 
 
@@ -64,6 +74,6 @@
  */
 
 
-
-
 // Your code here
+
+//I was unable to do this one
