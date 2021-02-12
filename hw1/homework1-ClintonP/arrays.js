@@ -12,6 +12,7 @@
  */
 
 // Your code here
+let imagesArray = ['image1.png', 'image2.png', 'image3.png'];
 
 /**
  * Question 2
@@ -20,6 +21,7 @@
  */
 
 // Your code here
+let q2 = imagesArray[0];
 
 /**
  * Question 3
@@ -28,6 +30,7 @@
  */
 
 // Your code here
+let q3 = imagesArray.length;
 
 /**
  * Question 4
@@ -37,6 +40,7 @@
 
 
 // Your code here
+let q4 = imagesArray[imagesArray.length - 1];
 
 
 // ____________________________________________________________________________
@@ -55,7 +59,10 @@
  */
 
 // Your code here
-
+let numbersArray = [1, 2, 3, 4];
+for (let i = 0, len = numbersArray.length; i < len; i++) {
+    numbersArray[i] += 1;
+};
 
 /**
  * Question 6
@@ -67,3 +74,10 @@
 
 
 // Your code here
+let sum = 0;
+for (let i = 0, len = numbersArray.length; i < len; i++) {
+    sum += numbersArray[i];
+};
+let q6 = sum / numbersArray.length;
+
+console.log(imagesArray, q2, q3, q4, numbersArray, q6);

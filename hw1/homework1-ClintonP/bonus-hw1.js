@@ -2,7 +2,7 @@
 let joker = ['Cmon', 'hit', 'me'];
 
 ////////  1. Answer  ////////////////
-console.log(joker.join());
+console.log(joker.join(' '));
 /////////////////////////////////////
 
 // 2. Help fill the array. Transfer all items out of the "remove" array and into the "fill"
@@ -23,8 +23,11 @@ console.log(remove, fill); // [], ['take', 'this', 'stuff', 'out']
 ////////////////////////////////
 
 ////////  2.2 Answer:  ////////
+
+// reset arrays
 remove = ['take', 'this', 'stuff', 'out'];
 fill = [];
+//
 
 fill = [].concat.apply([], remove.splice(0));
 

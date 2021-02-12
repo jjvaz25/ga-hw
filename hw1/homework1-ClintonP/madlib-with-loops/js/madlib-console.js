@@ -17,34 +17,71 @@ function getRandomArrayValue(inputArray) {
     return inputArray[Math.floor((Math.random() * inputArray.length))];
 };
 
-function generateSentence(array1, array2) {
-    return 'A startup that is ' + getRandomArrayValue(array1) + ', but for ' + getRandomArrayValue(array2);
+function printArrayValuesAsList(arrayToPrint) {
+    return '<li>' + arrayToPrint.join('</li><li>') + '</li>';
 };
 
-function printArrayValuesasList(arrayToPrint) {
-    return '<li>' + arrayToPrint.join('</li><li>') + '</li>';
+function generateSentence(array1, array2) {
+    return 'A startup that is ' + getRandomArrayValue(array1) + ', but for ' + getRandomArrayValue(array2);
 };
 
 function addFavorite(favoritedValue) {
     favoriteStartUps.push(favoritedValue);
 };
 
+function unfavorite(indexValue) {
+    favoriteStartUps.splice(indexValue, 1);
+};
+
+function togglefavoriteButton(onOrOff) {
+    if (onOrOff.toLowerCase() === 'on') {
+        $('#save').removeClass('favorited');
+        $('#save').text('Favorite Startup');
+    } else if (onOrOff.toLowerCase() === 'off') {
+        $('#save').addClass('favorited');
+        $('#save').text('Favorited!');
+    }
+};
 
 $(document).ready(function () {
 
     // Handle 'Create New Startup' click
     $('#create').click(function () {
-        $('#xForY').text(generateSentence(startupX, startupY));
+
+        // Generate mad lib
+        let madLib = generateSentence(startupX, startupY);
+        $('#xForY').text(madLib);
+
+        // Check if we've already favorited this mad lib. If so, mark it as already favorited.
+        favoriteStartUps.includes(madLib) ? togglefavoriteButton('off') : togglefavoriteButton('on');
+
     });
 
     // Handle 'Favorite Startup' click
     $('#save').click(function () {
-        addFavorite($('#xForY').text());
+
+        let currentMadLib = $('#xForY').text();
+
+        // Only run favorite logic if a madlib actually exists.
+        if (currentMadLib) {
+
+            // Check if we've already favorited this phrase. If not, add it. If so, remove it.
+            let indexOfMadLib = favoriteStartUps.indexOf(currentMadLib);
+
+            if (indexOfMadLib > -1) {
+                unfavorite(indexOfMadLib);
+                togglefavoriteButton('on');
+            } else {
+                addFavorite(currentMadLib);
+                togglefavoriteButton('off');
+            }
+
+        }
     });
 
     // Handle 'Print Favorites' click
     $('#print').click(function () {
-        $('#favorites').html('<ul>' + printArrayValuesasList(favoriteStartUps) + '</ul>');
+        $('#favorites').html('<ul>' + printArrayValuesAsList(favoriteStartUps) + '</ul>');
     });
 
 });

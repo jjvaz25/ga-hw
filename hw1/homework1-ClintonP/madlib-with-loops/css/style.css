@@ -93,3 +93,8 @@ body {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.favorited {
+  color: white;
+  background-color:red;
+}
