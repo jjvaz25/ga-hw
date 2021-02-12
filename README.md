@@ -1,11 +1,20 @@
 # Homework Repository
 
+| Link | Description |
+| --- | --- |
+[File Format](#fileformat) | File Format |
+[Homework Submission](#homeworksubmission) | Homework Submission Process |
+[Due Dates](#duedates) | Due Dates |
+[Setup](#setup)| Setup |
+
+<a name="fileformat"></a>
 ### File Format
 Lets remember to name files or folders for homework with a dash followed by your first name and last name initial before submitting a pull request
 * File: `assignment-KyleL.js`
 * Folder: `/homework2-KyleL`
 
-### Homework Process
+<a name="homeworksubmission"></a>
+### Homework Submission Process
 
 1. First lets always pull down the latest code
 ```bash
@@ -52,7 +61,14 @@ $ git push origin master
 
 4. Create a pull request on your repository and submit for review!
 
+<a name="duedates"></a>
+### Due Dates
+| Assigned | Description | Due Date |
+| --- | --- | --- |
+| 02/04/21 | Homework 0 (Optional) | N/A |
+| 02/09/21 | Homework 1 | 02/18/21 |
 
+<a name="setup"></a>
 ### Setup
 1. Our submission for homework will be set up in a similar fashion to our class repository setup. Our homework repository will be located [here](https://git.generalassemb.ly/kyleta/jsr-202-hw). Once again we will want to fork this repository, clone it to your local computer, add the upstream, push up to your repository, and a new step will be submit a pull request to turn in your homework.
 2. The fork button is located in the top right of the repository page.
