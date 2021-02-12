@@ -12,6 +12,8 @@
  */
 
 // Your code here
+let q1 = ['image1.png', 'image2.png', 'image3.png'];
+console.log("Question 1 " + q1);
 
 /**
  * Question 2
@@ -20,6 +22,8 @@
  */
 
 // Your code here
+let q2 = filenames[0];
+console.log("Question 2 " + q2);
 
 /**
  * Question 3
@@ -28,6 +32,9 @@
  */
 
 // Your code here
+q1.length;
+let q3 = q1.length;
+console.log("Question 3" + q3);
 
 /**
  * Question 4
@@ -37,7 +44,8 @@
 
 
 // Your code here
-
+let q4 = q1[q1.length - 1];
+console.log("Question 4" + q4);
 
 // ____________________________________________________________________________
 
@@ -55,7 +63,17 @@
  */
 
 // Your code here
+let num = [1, 2, 3, 4];
 
+for (let i = 0; i < num.length; i++) {
+	num[i] += 1;
+};
+console.log("Question 5: " + num);
+
+
+num.forEach(function(el) {
+console.log("Question 5: " + (el + 1));
+});
 
 /**
  * Question 6
@@ -64,6 +82,10 @@
  */
 
 
-
-
 // Your code here
+let sum = 0;
+for (let i = 0; i < num.length; i++) {
+	sum += num[i];
+};
+let avg = sum / num.length;
+console.log("Question 6: " + avg);
