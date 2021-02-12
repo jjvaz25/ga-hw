@@ -44,3 +44,32 @@ while (i >= 1) {
   console.log(`${i} ${bottle} of beer on the wall.`);
   console.log('');
 };
+
+/* Assignment 2: Random Address Generator
+
+Write a script that can generate random addresses
+As a first step, create arrays that contain dummy data for each of the following: 
+street number, street name, city name, state name and zip code
+Your script should randomly select one item from each of these arrays and then 
+use them to construct a random address
+Each time you run the script, it should print a new randomly-generated address to the terminal. 
+For example:
+node random-address.js
+=> 34578 Dolphin Street, Wonka NY, 44506 */
+
+let streetNums = [2134, 98762, 6924, 42858, 544];
+let streetNames = ['Lyceum Ave', 'Ocean Ave', 'Washington Blvd', 'Venice Blvd', 'Marcasel Ave'];
+let cities = ['Los Angeles', 'Houston', 'Arlington', 'Boston', 'Manhattan Beach'];
+let states = ['CA', 'MA', 'NY', 'TX', 'OR'];
+let zipcodes = ['90066', '90035', '18091', '11211', '42819'];
+
+const addressGenerator = () => {
+  let streetNum = streetNums[Math.floor(Math.random() * streetNums.length)];
+  let streetName = streetNames[Math.floor(Math.random() * streetNames.length)];
+  let city = cities[Math.floor(Math.random() * cities.length)];
+  let state = states[Math.floor(Math.random() * states.length)];
+  let zipcode = zipcodes[Math.floor(Math.random() * zipcodes.length)];
+  console.log(`${streetNum} ${streetName}, ${city}, ${state} ${zipcode}`);
+};
+
+addressGenerator();
