@@ -1,8 +1,6 @@
 let startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
 let startupY = ['Slack', 'Trello', 'Tesla', 'Hyperloop', 'Harvest'];
 
-
-
 let create;
 
 ////  Create new startup
