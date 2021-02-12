@@ -1,10 +1,75 @@
 # Homework Repository
 
+| Link | Description |
+| --- | --- |
+[File Format](#fileformat) | File Format |
+[Homework Submission](#homeworksubmission) | Homework Submission Process |
+[Due Dates](#duedates) | Due Dates |
+[Setup](#setup)| Setup |
+
+<a name="fileformat"></a>
 ### File Format
 Lets remember to name files or folders for homework with a dash followed by your first name and last name initial before submitting a pull request
 * File: `assignment-KyleL.js`
 * Folder: `/homework2-KyleL`
 
+<a name="homeworksubmission"></a>
+### Homework Submission Process
+
+1. First lets always pull down the latest code
+```bash
+$ git pull upstream master
+```
+
+2. Make a copy of the starter code/homework files
+
+So in order for us to have a smooth process of turning in homework and to avoid merge conflicts with other students. When working on homework, try to create a folder with the above naming format before starting.
+
+For example if the file structure of `hw1` looks like:
+```
+/jsr-202-hw
+└── /hw1
+    └── /starter-code
+        ├── /madlib-with-loops
+        ├── array.js
+        └── bonus-hw1.js
+    └── README.md
+```
+
+Lets make a copy of the `/starter-code` folder into a new folder:
+```
+/jsr-202-hw
+├── /hw1
+    └── /starter-code
+        ├── /madlib-with-loops
+        ├── array.js
+        └── bonus-hw1.js
+    └── /homework1-KyleL
+        ├── /madlib-with-loops
+        ├── array.js
+        └── bonus-hw1.js
+    └── README.md
+```
+So now you should not have to touch any of the files already in the homework repository. Your code should be done in your new folder and NOT in `/starter-code`
+
+3. If the homework assignment is long, feel free to commit multiple times. But once you are complete with your homework and ready to turn in, remember to commit one last time:
+```
+$ git add -A
+$ git commit -m 'change has been made'
+$ git push origin master
+```
+
+4. Create a pull request on your repository and submit for review!
+
+<a name="duedates"></a>
+### Due Dates
+| Assigned | Description | Due Date |
+| --- | --- | --- |
+| 02/04/21 | Homework 0 (Optional) | N/A |
+| 02/09/21 | Homework 1 | 02/18/21 |
+| 02/11/21 | Homework 2 | 02/16/21 |
+
+<a name="setup"></a>
 ### Setup
 1. Our submission for homework will be set up in a similar fashion to our class repository setup. Our homework repository will be located [here](https://git.generalassemb.ly/kyleta/jsr-202-hw). Once again we will want to fork this repository, clone it to your local computer, add the upstream, push up to your repository, and a new step will be submit a pull request to turn in your homework.
 2. The fork button is located in the top right of the repository page.
