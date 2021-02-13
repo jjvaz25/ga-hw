@@ -5,19 +5,19 @@ console.log('/////////////////////// 1');
 function quarterOf(month) {
     // Your code here
     if (month > 0 && month <= 3) {
-        console.log(1);
+        return 1;
     } else if (month > 3 && month <= 6) {
-        console.log(2);
+        return 2;
     } else if (month > 6 && month <= 9) {
-        console.log(3);
+        return 3;
     } else if (month > 9 && month <= 12) {
-        console.log(4);
-        //return 4;
+        return 4;
     }
 
 }
 
-quarterOf(2)  // return 1
+//console.log(quarterOf(2));  // return 1
+quarterOf(2)
 quarterOf(7)  // return 3
 quarterOf(12) // return 4
 
@@ -26,9 +26,9 @@ console.log('/////////////////////// 2');
 function problem(x) {
     //your code here
     if (Number.isInteger(x)) {
-        console.log(x * 50 + 6);
+        return x * 50 + 6;
     } else {
-        console.log('Error');
+        return 'Error';
     }
 }
 
@@ -46,10 +46,10 @@ function sum(array) {
         for (let i = 0; i < array.length; i++) {
             sum1 += array[i];
         }
-        console.log(sum1);
+        return sum1;
 
     } else {
-        console.log(0)
+        return 0;
     }
 }
 
@@ -63,9 +63,9 @@ console.log('/////////////////////// 4');
 function testEven(n) {
     //your code here
     if (n % 2 === 0) {
-        console.log(true);
+        return true;
     } else {
-        console.log(false);
+        return false;
     }
 }
 
@@ -79,9 +79,9 @@ console.log('/////////////////////// 5');
 function isDivisible(n, x, y) {
     //your code here
     if (n % x === 0 && n % y === 0) {
-        console.log(true);
+        return true;
     } else {
-        console.log(false);
+        return false;
     }
 }
 
@@ -96,7 +96,7 @@ console.log('/////////////////////// BONUS 1');
 // 1. Write a function that determines the largest of 2 numbers
 function maxOfTwoNumbers(x, y) {
     let Largest = (x > y) ? x : y;
-    console.log(Largest);
+    return Largest;
 }
 
 maxOfTwoNumbers(3, 9); // return 9
@@ -105,11 +105,11 @@ console.log('/////////////////////// BONUS 2');
 // 2. Write a function that determines the largest of 3 numbers
 const maxOfThree = function (x, y, z) {
     if (x > y && x > z) {
-        console.log(x);
+        return x;
     } else if (y > x && y > z) {
-        console.log(y);
+        return y;
     } else {
-        console.log(z);
+        return z;
     }
 
 };
@@ -120,19 +120,13 @@ maxOfThree(15, 10, 1);//15
 console.log('/////////////////////// BONUS 3');
 // 3. Write a function that determines if the character provide is a vowel
 function isCharAVowel(s) {
+    let value = s.toLowerCase();
+    return (value === "a" || value === "e" || value === "i" || value === "o" || value === "u");
 
-    if (s === "A" || s === "E" || s === "I" || s === "O" || s === "U" || s === "a" || s === "e" || s === "i" || s === "o" || s === "u") {
-        console.log(true);
-    } else {
-        console.log(false);
-    }
-}
+} //console.log(isCharAVowel('b'));
 
 isCharAVowel('a'); // return true
-isCharAVowel('b');// false
-isCharAVowel('U');// true
-isCharAVowel('C');// false
-isCharAVowel('u');// true
+
 
 
 console.log('/////////////////////// BONUS 4');
@@ -140,9 +134,9 @@ console.log('/////////////////////// BONUS 4');
 function multiplyArray(arr) {
     let sum1 = 1;
     for (let i = 0; i < arr.length; i++) {
-        sum1 *= arr[i];
+        return sum1 *= arr[i];
     }
-    console.log(sum1);
+    //console.log(sum1);
 }
 
 multiplyArray([5, 10, 2]); // return 100
@@ -159,7 +153,7 @@ const numArgs = function (...args) {
     for (let i = 0; i < arguments.length; i++) {
         na += i;
     }
-    console.log(na);
+    return na;
 
 };
 
@@ -172,7 +166,7 @@ function reverseString(s) {
     for (let i = s.length - 1; i >= 0; i--) {
         reverse += s[i];
     }
-    console.log(reverse);
+    return reverse;
 }
 
 reverseString('rockstar'); // return ratskcor
@@ -185,7 +179,8 @@ const longestStringInArray = function (arr) {
         if (lg < arr[i].length) {
             lg = arr[i].length;
         }
-    } console.log(lg);
+    }
+    return lg;
 };
 
 longestStringInArray(['say', 'hello', 'in', 'the', 'morning']); // return 7
@@ -198,7 +193,7 @@ function stringsLongerThan(arr, len) {
             newArr.push(arr[i]);
         }
     }
-    console.log(newArr);
+    return newArr;
 
 };
 
