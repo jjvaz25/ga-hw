@@ -34,7 +34,7 @@ beer();
  function beer() {
     let beersCount = 99;
     let bottles;
-    let bottlesRemaining = 99;
+    let bottlesRemaining;
 
     while (beersCount >= 1) {
         if (beersCount === 1) {
