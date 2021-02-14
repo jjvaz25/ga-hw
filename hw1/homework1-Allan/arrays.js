@@ -67,12 +67,12 @@ for (let i = 0; i < myArray.length; i++) {
 console.log(myArray);
 
 // forEach method, ask Jeff for the code!!
-/*let newArray; 
+let newArray = []; 
 myArray.forEach(function(x) {
     newArray.push(x)
 })
 console.log(newArray);
-*/
+
 
 //map function
 let newArray2 = myArray.map(function (num) {
