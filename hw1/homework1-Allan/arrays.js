@@ -58,7 +58,28 @@ console.log(q4);
 * an array of numbers with values 2, 3, 4, and 5.
 */
 
-// Your code here
+myArray = [1, 2, 3, 4];// Your code here
+// for loop
+for (let i = 0; i < myArray.length; i++) {
+    myArray[i]++; 
+}
+
+console.log(myArray);
+
+// forEach method, ask Jeff for the code!!
+/*let newArray; 
+myArray.forEach(function(x) {
+    newArray.push(x)
+})
+console.log(newArray);
+*/
+
+//map function
+let newArray2 = myArray.map(function (num) {
+    return num += 1; 
+})
+
+console.log(newArray2); 
 
 
 /**
@@ -68,6 +89,9 @@ console.log(q4);
 */
 
 
+let q6 = 0; 
+myArray.forEach(function(x) {
+    q6 = q6 + x; 
+})
 
-
-// Your code here
+console.log(q6/myArray.length);
