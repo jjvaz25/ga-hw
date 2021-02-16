@@ -11,7 +11,8 @@
  * Use "image1.png", "image2.png", and "image3.png" as the array values.
  */
 
-// Your code here
+let q1 = ["image1.png", "image2.png", "image3.png"]
+
 
 /**
  * Question 2
@@ -19,7 +20,7 @@
  * in variable q2.
  */
 
-// Your code here
+let q2 = q1[0];
 
 /**
  * Question 3
@@ -27,7 +28,7 @@
  * and store it in variable q3
  */
 
-// Your code here
+let q3 = q1.length;
 
 /**
  * Question 4
@@ -36,7 +37,7 @@
  */
 
 
-// Your code here
+let q4 = q1.pop();
 
 
 // ____________________________________________________________________________
@@ -54,7 +55,10 @@
  * an array of numbers with values 2, 3, 4, and 5.
  */
 
-// Your code here
+q5 = [1, 2, 3, 4];
+for (let i = 0; i < q5.length; i++) { 
+    q5[i] += 1; 
+}
 
 
 /**
@@ -64,6 +68,8 @@
  */
 
 
+let q6 = q5.reduce(function(a, b){
+    return a + b;
+}, 0);
 
 
-// Your code here
