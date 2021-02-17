@@ -38,8 +38,8 @@ console.log("Question 3: " + q3)
  * in variable q4. Hint: How can we get the number of elements in the array?
  */
 
-let q4 = q1[q1.lenght - 1];
-console.log('Questions 4:' + q4)
+let q4 = q4[q1.length - 1];
+console.log('Questions 4:' + q4);
 
 
 // ____________________________________________________________________________
@@ -57,15 +57,14 @@ console.log('Questions 4:' + q4)
  * an array of numbers with values 2, 3, 4, and 5.
  */
 
-let q5 = [1, 2, 3, 4];
-for (let i = 0; i < q5.length; i++) {
-    q5[i]+=1;
-    //console.log(q5[i]+1);
-}
-console.log('Question 5: ' + q5);
 
 // Your code here
 
+let q5 = [1, 2, 3, 4];
+for (let i = 0; i < q5.length; i++) {
+    q5[i]+=1;
+}
+console.log('Question 5: ' + q5);
 
 /**
  * Question 6
@@ -75,5 +74,10 @@ console.log('Question 5: ' + q5);
 
 
 // Your code here
+let total = 0;
+for (let i = 0; i < q5.length; i++) {
+    total += q5[i];
+} 
+let q6 = q6[avg = total / q5.length]; 
+console.log('Question 6: ' + q6)
 
-//I was unable to do this one
