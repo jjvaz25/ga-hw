@@ -17,6 +17,14 @@ for (let i = 100; 0 < i; i--) {
             Pass it around,
             No more bottles of beer on the wall!
         `);
+    } else if (i === 2) {
+        console.log(`
+            ${i} bottles of beer on the wall,
+            ${i} bottles of beer!
+            Take one down,
+            Pass it around,
+            ${i - 1} bottle of beer on the wall!
+        `);
     } else {
         console.log(`
             ${i} bottles of beer on the wall,
