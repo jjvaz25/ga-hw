@@ -5,16 +5,11 @@ let stateName = ['IL', 'NY', 'CA'];
 let zip = [11, 12, 13, 14, 15]; 
 
 let address = [];
-address[0] = (Math.floor(Math.random()) * streetNumber);
-console.log(address)
-console.log(Math.floor(Math.random()) * streetNumber);
-console.log(Math.floor(Math.random()) * streetNumber);
-console.log(streetNumber[Math.floor(Math.random() * streetNumber)]);
 
-address.push(streetNumber[Math.floor(Math.random() * streetNumber)]);
-address.push(streetName[Math.floor((Math.random() * streetName))]);
-address.push(cityName[Math.floor((Math.random() * cityName))]);
-address.push(stateName[Math.floor((Math.random() * stateName))]);
-address.push(zip[Math.floor((Math.random() * zip))]);
+address.push(streetNumber[Math.floor(Math.random() * streetNumber.length)]);
+address.push(streetName[Math.floor(Math.random() * streetName.length)]);
+address.push(cityName[Math.floor(Math.random() * cityName.length)]);
+address.push(stateName[Math.floor(Math.random() * stateName.length)]);
+address.push(zip[Math.floor(Math.random() * zip.length)]);
 
-console.log(address[0], " ", address[1], ", ", address[2], ", ", address[3], address[4]);
+console.log(address[0] + " " + address[1] + ", " + address[2] + ", " + address[3] + " " + address[4]);
