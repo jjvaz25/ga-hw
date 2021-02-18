@@ -11,8 +11,8 @@
  * Use "image1.png", "image2.png", and "image3.png" as the array values.
  */
 
-let q1 = ["image1.png" , "image2.png" , "image3.png"];
-console.log("Question 1: " + q1)
+let q1 = ["image1.png", "image2.png", "image3.png"]
+
 
 /**
  * Question 2
@@ -21,7 +21,6 @@ console.log("Question 1: " + q1)
  */
 
 let q2 = q1[0];
-console.log("Question 2: " + q2)
 
 /**
  * Question 3
@@ -30,7 +29,6 @@ console.log("Question 2: " + q2)
  */
 
 let q3 = q1.length;
-console.log("Question 3: " + q3)
 
 /**
  * Question 4
@@ -38,8 +36,8 @@ console.log("Question 3: " + q3)
  * in variable q4. Hint: How can we get the number of elements in the array?
  */
 
-let q4 = q1[q1.lenght - 1];
-console.log('Questions 4:' + q4)
+
+let q4 = q1.pop();
 
 
 // ____________________________________________________________________________
@@ -57,14 +55,10 @@ console.log('Questions 4:' + q4)
  * an array of numbers with values 2, 3, 4, and 5.
  */
 
-let q5 = [1, 2, 3, 4];
-for (let i = 0; i < q5.length; i++) {
-    q5[i]+=1;
-    //console.log(q5[i]+1);
+q5 = [1, 2, 3, 4];
+for (let i = 0; i < q5.length; i++) { 
+    q5[i] += 1; 
 }
-console.log('Question 5: ' + q5);
-
-// Your code here
 
 
 /**
@@ -74,6 +68,8 @@ console.log('Question 5: ' + q5);
  */
 
 
-// Your code here
+let q6 = q5.reduce(function(a, b){
+    return a + b;
+}, 0);
 
-//I was unable to do this one
+
