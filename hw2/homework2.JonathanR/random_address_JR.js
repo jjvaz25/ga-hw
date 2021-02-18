@@ -12,16 +12,14 @@
 let streetNumber = ['34578', '12345', '98764', '89072', '75643'];
 let streetName = ['First Street', 'Second Street', 'Third Street', 'Fourth Street', 'Fifth Street'];
 let cityName = ['Miami', 'Austin', 'San Francisco', 'New York', 'Portland'];
-let stateName = ['FL', 'TX', 'CA', 'NY', 'OR',]
+let stateName = ['FL', 'TX', 'CA', 'NY', 'OR',];
 let zipCode = ['33028', '73301', '94102', '10001', '42801'];
 
 let streetNumberRandom = Math.floor(Math.random() * streetNumber.length);
 let streetNameRandom = Math.floor(Math.random() * streetName.length);
 let stateNameRandom = Math.floor(Math.random() * stateName.length)
 let cityNameRandom = Math.floor(Math.random() * cityName.length);
-let zipCodeRandom = Math.floor(Math.random() * cityName.length);
+let zipCodeRandom = Math.floor(Math.random() * zipCode.length);
 
-console.log(`${streetNumber[streetNumberRandom]} ${streetName[streetNameRandom]}, ${cityName[cityNameRandom]}${stateName[stateNameRandom]}, ${zipCode[zipCodeRandom]}`);
+console.log(`${streetNumber[streetNumberRandom]} ${streetName[streetNameRandom]}, ${cityName[cityNameRandom]} ${stateName[stateNameRandom]}, ${zipCode[zipCodeRandom]}`);
 
-
-// Here's my attempt. I could not figure out why it doesn't work :(
