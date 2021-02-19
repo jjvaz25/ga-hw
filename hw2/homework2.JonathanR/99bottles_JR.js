@@ -19,7 +19,7 @@ let secondBottle;
 
 // Using If Statements
 
-for (let i = 100; i >= 0; i--) {
+for (let i = 100; i > 0; i--) {
     if(i > 1) {
         firstBottle = `${i} bottles`;
     } else {
@@ -29,8 +29,9 @@ for (let i = 100; i >= 0; i--) {
         secondBottle = `${i - 1} bottles`;
     } else if(i - 1 < 9) {
         secondBottle = `${i} bottle`;
-    } else if(i - 1 === 0) {
+    }
+    if(i - 1 === 0) {
         secondBottle = 'No more bottles';
     }
     console.log(`${firstBottle} of beer on the wall. ${firstBottle} of beer! Take one down, Pass it around, ${secondBottle} of beer on the wall!`);
-}
+} 
