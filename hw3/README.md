@@ -1,0 +1,2 @@
+## Homework 3
+Javascript code challenges! There are 5 Javascript code challenges in the `/starter-code` directory under the file `homework3.js`. Remember to comment out the problems you finish so it does not accidentally interfere with the question you are currently working on.
