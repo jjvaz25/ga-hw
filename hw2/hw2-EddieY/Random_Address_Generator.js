@@ -27,6 +27,6 @@ function randomAddress() {
     let randomZip = Math.floor((Math.random() * zip.length));
 
     address = stNumber[randomNumber] + " " + stName[randomName] + ", " + city[randomCity] + " " + state[randomState] + ", " + zip[randomZip];
-};
+    return address;
+}
 randomAddress();
-console.log(address);
