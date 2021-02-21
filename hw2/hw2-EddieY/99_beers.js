@@ -9,6 +9,8 @@ Do not worry about spelling out the numbers, use actual numbers (100, 99, 98...)
 
 // Code
 
+
+
 // for loop
 function beer() {
     let bottles;
@@ -18,7 +20,10 @@ function beer() {
         if (i === 1) {
             bottles = "bottle";
             bottlesRemaining = "No more bottles of beer on the wall."
-        } else {
+        } else if (i === 2) {
+            bottlesRemaining = "1 bottle of beer on the wall."
+            
+        }else {
             bottles = "bottles";
             bottlesRemaining = i -1 + " bottles of beer on the wall.";
         }
@@ -36,10 +41,13 @@ beer();
     let bottles;
     let bottlesRemaining;
 
-    while (beersCount >= 1) {
+    while (beersCount > 0) {
         if (beersCount === 1) {
             bottles = "bottle";
             bottlesRemaining = "No more bottles of beer on the wall.";
+            
+        } else if (beersCount === 2) {
+            bottlesRemaining = "1 bottle of beer on the wall."
             
         } else {
             bottles = "bottles";
