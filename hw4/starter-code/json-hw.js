@@ -8,7 +8,7 @@ var jsonString = '{ "title": "Uploads from everyone", "link": "https://www.flick
 called `flickerObj`
 */
 
-
+let flickerObj = JSON.parse(jsonString)
 
 
 /*
@@ -18,15 +18,29 @@ with the date the photo was taken. The first console.log should return the follo
 "Edelweiss Air, Airbus A320-214, HB-IJU 2016-02-21T11:27:58-08:00"
 
 */
+for (let i = 0; i < flickerObj.items.length; i++) {
+    console.log(flickerObj.items[i].title, flickerObj.items[i].date_taken)
+}
 
 
 /*
-3. Create a new array called 'links'. Iterate through the items array in flickerObj and store the the links to each item in the 'links' array.
+3. Create a new array called 'links'.
+Iterate through the items array in flickerObj and store the the links to each item in the 'links' array.
+*/
+let links = []
+for (let i = 0; i < flickerObj.items.length; i++) {
+    links.push((flickerObj.items[i].link))
+}
+
+
+/*
+4. Convert the 'links' array into a JSON string. Do a console.log of that JSON string, 
+copy the results from the terminal and paste them into the input box at http://jsonlint.com/
+Did it create a valid JSON string?
 */
 
+let links_str = JSON.stringify(links)
+console.log(links_str)
 
-
-/*
-4. Convert the 'links' array into a JSON string. Do a console.log of that JSON string, copy the results from the terminal and paste them into the input box at http://jsonlint.com/
-Did it create a valid JSON string?
-*/ 
+// Here is the result with Valid JSON
+/*["https://www.flickr.com/photos/rs_1978/24588086024/","https://www.flickr.com/photos/jankcan/24591927533/","https://www.flickr.com/photos/135809419@N03/24591927613/","https://www.flickr.com/photos/133198303@N02/24591927753/","https://www.flickr.com/photos/heldraug/24851049089/","https://www.flickr.com/photos/136014283@N07/24851050899/","https://www.flickr.com/photos/50745053@N03/24923135500/","https://www.flickr.com/photos/132983250@N07/25100481202/","https://www.flickr.com/photos/124555880@N07/25125526531/","https://www.flickr.com/photos/kubcam3/25125526981/","https://www.flickr.com/photos/115536615@N04/25125527901/","https://www.flickr.com/photos/105987794@N04/25192452966/","https://www.flickr.com/photos/mark_firley/25192453006/","https://www.flickr.com/photos/121356883@N02/25192453956/","https://www.flickr.com/photos/starr-environmental/25218735885/","https://www.flickr.com/photos/tinkeringschool/25218735915/","https://www.flickr.com/photos/94117823@N05/25218736135/","https://www.flickr.com/photos/twilightstation/25218736415/","https://www.flickr.com/photos/dontliketobebored/25218736925/","https://www.flickr.com/photos/peter_williams/25218737415/"] */
