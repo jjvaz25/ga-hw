@@ -15,7 +15,7 @@ called `flickerObj`
 2. Iterate (this means 'use a loop') and do a console.log of each of the item titles
 with the date the photo was taken. The first console.log should return the following:
 
-"What a surprise in lyon. 2016-02-23T06:47:30-08:00"
+"Edelweiss Air, Airbus A320-214, HB-IJU 2016-02-21T11:27:58-08:00"
 
 */
 
