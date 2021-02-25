@@ -14,11 +14,24 @@ let monkey = {
     name: "",
     species: "",
     foodsEaten: [],
-    eatSomething: (food) => {
+    eatSomething: function (food) {
         return monkey.foodsEaten.push(food)
     },
     introduce: () => {
         return `${monkey.name} is a ${monkey.species} and has eaten ${monkey.foodsEaten}`
+    }
+}
+
+let Monkey = function (name, species, foodsEaten) {
+    this.name = name,
+        this.species = species,
+        this.foodsEaten = foodsEaten,
+        this.eatSomething = function (food) {
+            this.foodsEaten = []
+            return this.foodsEaten.push(food)
+        }
+    this.introduce = () => {
+        return `${this.name} is a ${this.species} and has eaten ${this.foodsEaten}`
     }
 }
 
