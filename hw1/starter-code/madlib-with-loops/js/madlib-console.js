@@ -1,19 +1,26 @@
+  
 let startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
 let startupY = ['Slack', 'Trello', 'Tesla', 'Hyperloop', 'Harvest'];
 
-let random1 = Math.floor((Math.random() * startupX.length));
-let random2 = Math.floor((Math.random() * startupY.length));
+// let random1 = Math.floor((Math.random() * startupX.length));
+// let random2 = Math.floor((Math.random() * startupY.length));
 
-//Minimum Requirements
+// console.log('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]);
 
 let crtBtn = document.getElementById('create');
-let newStartUp = `A startup that is ${startupX[random1]} and ${startupY[random2]}`
+let random1 = Math.floor((Math.random() * startupX.length));
+let random2 = Math.floor((Math.random() * startupY.length));
+let newStartUp = `A startup that is ${startupX[random1]} and ${startupY[random2]}`;
 
 crtBtn.addEventListener('click', function() {    
-    document.getElementById('xForY').innerHTML = newStartUp
-})
+    let random1 = Math.floor((Math.random() * startupX.length));
+    let random2 = Math.floor((Math.random() * startupY.length));
+    let newStartUp = `A startup that is ${startupX[random1]} and ${startupY[random2]}`;
+    document.getElementById('xForY').innerHTML = newStartUp;
+    console.log('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]);
+}) 
 
-//Stretch Goals
+// Stretch goals
 
 let svBtn = document.getElementById('save');
 let saveList = []
@@ -21,11 +28,10 @@ let saveList = []
 svBtn.addEventListener('click', function() {
     saveList.push(newStartUp);
     console.log(saveList);
-    document.getElementById('xForY').innerHTML = 'Saved to console.'
-})
+})  
 
-
-let prtBtn = document.getElementById('print');
-prtBtn.addEventListener('click', function() {
+let prtFav = document.getElementById('print');
+prtFav.addEventListener('click', function() {
     document.getElementById('favorites').innerHTML = startupX + startupY
 })
+
