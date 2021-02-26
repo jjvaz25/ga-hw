@@ -142,6 +142,12 @@ function reverseString(s) {
 
 reverseString('rockstar'); // return ratskcor
 
+
+
+// I found solutions to 7/8 using google etc but struggled to actually understand them so have left them blank for now.
+
+
+
 // 7. Write a function that determines the longest string in an array and return the length of the string
 const longestStringInArray = function(arr) {
 
