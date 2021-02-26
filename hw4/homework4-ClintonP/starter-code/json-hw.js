@@ -35,7 +35,7 @@ let links = [];
 
 // Loop through flickerObj items and use JSON parse/stringify to push the values into links.
 for(let i = 0, len = flickerObj['items'].length; i < len; i++) { 
-    // Identify current item, then log out the title and date.  
+    // Identify current item, then add the same value it contains to the links array by using parse/stringify.  
     let currentItem = flickerObj['items'][i];
     links.push(JSON.parse(JSON.stringify(currentItem.link)));
 }
