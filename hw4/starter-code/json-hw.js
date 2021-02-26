@@ -8,6 +8,9 @@ var jsonString = '{ "title": "Uploads from everyone", "link": "https://www.flick
 called `flickerObj`
 */
 
+const flickerObj = JSON.parse(jsonString);
+console.log(jsonString.result);
+
 
 
 

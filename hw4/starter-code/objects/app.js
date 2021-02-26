@@ -19,7 +19,17 @@
   // - park
 
 // Answer Starts Here
-
+// 'Calendar App'
+// Description: Our app keeps tracks of things
+// To do list
+// - Date
+// - Add New
+// - To do item
+// - Checkbox
+// Reminders
+// - Add reminders
+// - Edit reminders
+// - delete reminders
 // Answer Ends Here
 
 // 2. Create an Object literal that lines up with the following description. Store it in the variable 'pet_owner', below. Be sure to give it reasonable values for each of its properties.
@@ -30,10 +40,14 @@
   // - a name
   // - an address
 
-let pet_owner;
-
 // Answer Starts Here
-
+let pet_owner = {
+  appDescription : 'app for a veterinary clinic to manage pets\' vaccinations',
+  owner : {
+    name: 'Joe',
+    address: '123 Hello St'
+  }
+}
 // Answer Ends Here
 
 // 3. Create an Object literal that lines up with the following description. Store it in the variable `some_pet`, below.
@@ -48,20 +62,36 @@ let pet_owner;
   // Every pet can:
   // - make noise (each pet makes its own unique noise, as specified by `noise`.
 
-let some_pet;
-
 // Answer Starts Here
-
+let some_pet = {
+  pet : {
+    petInfo : {
+      name : '',
+      species: ['canine', 'feline', 'reptile'],
+      breed: '',
+    },
+    noise : {
+      noiseType : ['bark', 'meow', 'snort'],
+    },
+  },
+  appDescription : 'app for a veterinary clinic to manage pets\' vaccinations',
+  }
+}
 // Answer Ends Here
 
 // 4. Create a constructor function for Pet objects, as described above. The constructor function should be responseible for setting
 //    the values of `name`, `species`, `breed`, and `noise`. The constructor function should also give each pet a method called `makeNoise`,
 //    which behaves as described in Q3.
 
-let Pet;
+
 // Answer Starts Here
+let Pet = function (petInfo, noise) {
+  this.noiseType = makeNoise;
+};
 
 // Answer Ends Here
+// I was unable to do this one.
+
 
 module.exports = {
   answerTwo: pet_owner,
