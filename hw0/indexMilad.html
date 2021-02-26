@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    text-align: center;
+    background-color: gainsboro;
+}
+#redButton {
+    background-color: red;
+}  
+#blueButton{
+    background-color:blue;
+}
+#yellowButton{
+    background-color: yellow;
+}
+#button {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<h1>Milad</h1>
+<p>Click the button to turn the lamp on/off:</p>
+
+
+<input id="redButton" type="submit" name="button" value="red"/>
+<input id="blueButton" type="submit" name="button" value="blue"/>
+<input id="yellowButton" type="submit" name="button" value="yellow"/>
+<p></p>
+<button id="button">Lamp</button>
+<p id="demo"></p>
+
+<script>
+   let light, lightColor;
+ let btn = false;
+document.getElementById('redButton').onclick = function() {
+   //alert("Red button");
+    //light ='';
+    if (light !== 'red'){
+        light = 'red';
+        lightColor = 'red';
+        btn = false;
+        document.getElementById('button').style.backgroundColor = "red";
+    } else {
+        light = 'off';
+        lightColor = 'off';
+        btn = true;
+        document.getElementById('button').style.backgroundColor = "black";
+    }
+   // return light , lightColor, click;
+   document.getElementById("demo").innerHTML =  lightColor;
+}
+document.getElementById('blueButton').onclick = function() {
+   //alert("Red button");
+    //light ='';
+    if (light !== 'blue'){
+        light = 'blue';
+        lightColor = 'blue';
+        btn = false;
+        document.getElementById('button').style.backgroundColor = "blue";
+    } else {
+        light = 'off';
+        lightColor = 'off';
+        btn = true;
+        document.getElementById('button').style.backgroundColor = "black";
+    }
+   // return light , lightColor, click;
+   document.getElementById("demo").innerHTML =  lightColor;
+}
+document.getElementById('yellowButton').onclick = function() {
+   //alert("Red button");
+    //light ='';
+    if (light !== 'yellow'){
+        light = 'yellow';
+        lightColor = 'yellow';
+        btn = false;
+        document.getElementById('button').style.backgroundColor = "yellow";
+    } else {
+        light = 'off';
+        lightColor = 'off';
+        btn = true;
+        document.getElementById('button').style.backgroundColor = "black";
+    }
+   // return light , lightColor, click;
+   document.getElementById("demo").innerHTML =  lightColor;
+}
+</script>
+
+</body>
+</html>
