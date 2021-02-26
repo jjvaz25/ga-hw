@@ -25,17 +25,10 @@ let notActuallyJSON = {
 // Copy the entire object above ({...}, but NOT 'let notActuallyJSON =' or the trailing semicolon)--just copy everything between the brackets, including the brackets themselves.
 // Then go to http://jsonlint.com/ and paste it into the validator. Does it pass the test of being valid JSON?
 
-// Yes this passes the JSON Validator
-
 // The following line is valid JavaScript, but the object is not written in valid JSON syntax.
 // [ Step 2 ] Use JSONLint to validate the object in the following line; then, edit the object so it passes the validator.
-let eddie = { name: "Eddie Vedder", age: 49 };
-
-//Valid value is below:
-let eddie = {
-  "name": "Eddie Vedder",
-  "age": "49"
-}
+//let eddie = {name:"Eddie Vedder", age:49};
+let eddie = {"name":"Eddie Vedder", "age":49};
 
 // We frequently want to turn a JavaScript object into a JSON string, and vice versa.
 // JavaScript has a built-in global object called `JSON` that contains a number of useful methods for manipulating JSON.
@@ -46,44 +39,41 @@ let eddie = {
 // Then, convert `grungeAlbumsJSON` back into a JavaScript object, and compare it to the original `grungeAlbums`. Are they the same?
 
 let grungeAlbums = {
-  "albums": [
+  "albums":[
     {
-      "name": "Bleach",
-      "artist": "Nirvana",
-      "unitsSold": 1700000
+        "name": "Bleach",
+        "artist": "Nirvana",
+        "unitsSold": 1700000
     },
     {
-      "name": "Nevermind",
-      "artist": "Nirvana",
-      "unitsSold": 30000000
+        "name": "Nevermind",
+        "artist": "Nirvana",
+        "unitsSold": 30000000
     },
     {
-      "name": "In Utero",
-      "artist": "Nirvana",
-      "unitsSold": 15000000
+        "name": "In Utero",
+        "artist": "Nirvana",
+        "unitsSold": 15000000
     },
     {
-      "name": "Ten",
-      "artist": "Pearl Jam",
-      "unitsSold": 10000000
+        "name": "Ten",
+        "artist": "Pearl Jam",
+        "unitsSold": 10000000
     },
     {
-      "name": "Vs",
-      "artist": "Pearl Jam",
-      "unitsSold": 6100000
+        "name": "Vs",
+        "artist": "Pearl Jam",
+        "unitsSold": 6100000
     },
     {
-      "name": "Vitalogy",
-      "artist": "Pearl Jam",
-      "unitsSold": 4770000
+        "name": "Vitalogy",
+        "artist": "Pearl Jam",
+        "unitsSold": 4770000
     }
   ]
 };
 
-let grungeAlbumsJSON = JSON.stringify(grungeAlbums)
-
-
-
+let grungeAlbumsJSON = JSON.stringify(grungeAlbums);
 // Imagine that we only had JSON to work with, and wanted to convert it to a JS Object.
 // Fortunately, the `JSON` global object converts both ways - to and from JSON.
 // To turn a JSON string into a JS Object, use the .parse method  ( JSON.parse('some string') )
@@ -93,18 +83,18 @@ let grungeAlbumsJSON = JSON.stringify(grungeAlbums)
 // Then, for each album in the list, do a console log printing out the album name, artist, and units sold.
 // Each album should be formatted as follows:
 
-let new_grungeAlbums = JSON.parse(grungeAlbumsJSON)
-
 //  Album: Album name
 //  Artist: Artist name
 //  Units sold: 31234
-for (let i = 0; i < new_grungeAlbums.albums.length; i++) {
-  console.log(`Album: ${new_grungeAlbums.albums[i].name}
-               Artist: ${new_grungeAlbums.albums[i].artist}
-               Units Sold: ${new_grungeAlbums.albums[i].unitsSold}`)
+grungeAlbums = JSON.parse(grungeAlbumsJSON);
+
+for(let i in grungeAlbums["albums"]){
+  let alArray = grungeAlbums["albums"][i];
+  console.log( 'Album name: ',alArray["name"],'- artist: ',alArray["artist"],'- units sold: ',alArray["unitsSold"]);
+  
 }
-
-
-
 // [ Step 5 ] Create a custom JSON using the JSON validator from Step 1.
 // Convert it back to a JavaScript object, change it, and then convert it back to JSON again. Compare it to your original - how has it changed?
+let miladMJSON = '{"name":"Milad Mo", "age":32}';
+let miladM = JSON.parse(miladMJSON);
+console.log(miladM);
