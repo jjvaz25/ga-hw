@@ -7,43 +7,38 @@ var jsonString = '{ "title": "Uploads from everyone", "link": "https://www.flick
 1. Convert the string `jsonString` to a Javascript Object and store it in a variable
 called `flickerObj`
 */
-let flickerObj = JSON.parse(jsonString);
 
-
+let jsonStringToObject = JSON.parse(jsonString);
+console.log(jsonStringToObject);
+console.log('problem 2 below:');
 /*
 2. Iterate (this means 'use a loop') and do a console.log of each of the item titles
 with the date the photo was taken. The first console.log should return the following:
 
-"Edelweiss Air, Airbus A320-214, HB-IJU 2016-02-21T11:27:58-08:00"
+"What a surprise in lyon. 2016-02-23T06:47:30-08:00"
 */
-for (let i = 0; i < flickerObj.items.length; i++) {
-        console.log(flickerObj.items[i].title)
-};
 
-for (i = 0; i < flickerObj.items.length; i++) {
-    // console.log(flickerObj.items[i]);
-    let obj = flickerObj.items[i];
-    console.log(`${obj.title},  ${obj.date_taken}`);   
+for (let i = 0; i <jsonStringToObject.items.length; i++) {
+  console.log(`${jsonStringToObject.items[i].title}. ${jsonStringToObject.items[i].date_taken}`);
 }
 
 /*
 3. Create a new array called 'links'. Iterate through the items array in flickerObj and store the the links to each item in the 'links' array.
 */
+console.log('problem 3 below');
 let links = [];
-for (let i = 0; i < flickerObj.items.length; i++) {
-    links.push(flickerObj.items[i].link);
-}
-
-let links = [];
-for (let i = 0; i < flickerObj.items.length; i++){
-    links.push(flickerObj.items[i].link); 
+for (let i = 0; i <jsonStringToObject.items.length; i++) {
+  links.push(jsonStringToObject.items[i].link);
 };
+
 console.log(links);
 
 /*
 4. Convert the 'links' array into a JSON string. Do a console.log of that JSON string, copy the results from the terminal and paste them into the input box at http://jsonlint.com/
 Did it create a valid JSON string?
 */ 
+console.log('problem 4 below');
+let linksAsJSON = JSON.stringify(links);
+console.log(linksAsJSON);
 
-let jayStrang = JSON.stringify(links);
-console.log(jayStrang);
+//FUCNTION REPORT: JSON: good
