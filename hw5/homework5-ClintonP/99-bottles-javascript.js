@@ -1,6 +1,8 @@
 // Set variables to help with bottle plurality
 let currentBottle;
 let nextBottle;
+
+// Get HTML element to append lyrics to
 let listParent = document.getElementById("lyrics");
 
 for (let i = 100; i > 0; i--) {
