@@ -41,7 +41,9 @@ document.getElementById('print').onclick = function () {
 
     //     console.log(finalList);
     //     console.log(madlib);
-    // }
+    // } Bot name is Huey
+    // Note to self: Hamish pronounced Hay-Mish
+
 };
 
 
