@@ -22,7 +22,7 @@ addListBtn.addEventListener('click', function(){
     while (bottle > 2) {
         const newLI = document.createElement('LI');
         newLI.innerHTML = `${bottle} bottles of beer on the wall, ${bottle} bottles of beer! Take one down, Pass it around, ${bottle - 1} bottles of beer on the wall!`;
-        let campusesContainer = document.getElementById("gaCampuses");
+        let campusesContainer = document.getElementById("songLyrics");
         campusesContainer.appendChild(newLI);
         bottle--;
 }
@@ -30,7 +30,7 @@ addListBtn.addEventListener('click', function(){
 let createLastTwoLines = function(lyric){
     const newLI = document.createElement('LI');
     newLI.innerHTML = lyric;
-    let campusesContainer = document.getElementById("gaCampuses");
+    let campusesContainer = document.getElementById("songLyrics");
     campusesContainer.appendChild(newLI);
 };
 
