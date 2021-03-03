@@ -32,6 +32,6 @@ function bottleOfBeer() {
     lyric = `${i} ${bottle} of beer on the wall.`
     lastLyricInVerse(lyric);
   };
-}
+};
 
 bottleOfBeer();

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Balsamiq Sans', cursive;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/d/de/Barney_Gumble.png");
+}
+
+.back {
+    background-color: rgba(255, 255, 255, 0.899);
+    padding: 3rem;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    margin: 0px auto;
+    width: 750px;
+}
+
+@counter-style repeating-emoji {
+    system: cyclic;
+    symbols: "\1F974""\1F37A""\1F37B"; // unicode code point
+    suffix: " ";
+
+}
+
+li {
+    list-style-type: "\1F37A";
+    padding-left: 10px;
+}
