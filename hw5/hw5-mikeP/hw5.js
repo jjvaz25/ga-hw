@@ -25,7 +25,7 @@ addListBtn.addEventListener('click', function(){
         let campusesContainer = document.getElementById("songLyrics");
         campusesContainer.appendChild(newLI);
         bottle--;
-}
+};
 
 let createLastTwoLines = function(lyric){
     const newLI = document.createElement('LI');
