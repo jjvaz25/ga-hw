@@ -30,4 +30,4 @@ On branch kyleBranch
 $ git push origin kyleBranch
 ```
 7. You can now double check on Github and see that branch is available in the left drop down:
-()[]
+![](branches.png)
