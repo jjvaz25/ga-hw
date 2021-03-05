@@ -44,3 +44,8 @@ $ git add -A
 $ git commit -m 'added a file'
 $ git push origin kyleBranch
 ```
+
+10. Lets make our pull request now. In the past we never worried about what branch was going where. Pay attention to the branches in the drop down. Do a pull request from your branch (`kyleBranch`) in your repository going to the class homework repository's `submission` branch. It should look something like this:
+![](pullrequest.png)
+
+11. Once I merge all the pull requests, everyone's files for this exercise should be visible in the `submission` branch but `master` should only contain the `README.md` file in the `/gitBranch` directory
