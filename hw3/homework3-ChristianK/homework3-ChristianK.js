@@ -131,7 +131,8 @@ isCharAVowel('b'); // return false
 
 // 4. Write a function that gets the product of all numbers multiplied in an array
 function multiplyArray(arr) {
-
+    let arr = [];
+    return arr 
 }
 
 multiplyArray([5, 10, 2]); // return 100
