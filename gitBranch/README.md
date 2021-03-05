@@ -31,3 +31,16 @@ $ git push origin kyleBranch
 ```
 7. You can now double check on Github and see that branch is available in the left drop down:
 ![](branches.png)
+
+8. Lets actually make a change so that we have something to compare, create a file in the `/gitBranch` folder:
+```
+$ cd gitBranch
+$ touch example-KyleL.txt
+```
+
+9. Add, commit, and push this change up to GitHub:
+```
+$ git add -A
+$ git commit -m 'added a file'
+$ git push origin kyleBranch
+```
