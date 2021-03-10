@@ -71,6 +71,7 @@ $ git push origin master
 | 02/16/21 | Homework 3 | 02/18/21 |
 | 02/23/21 | Homework 4 | 02/25/21 |
 | 02/25/21 | Homework 5 | 03/02/21 |
+| 03/09/21 | Homework 6 | 03/16/21 |
 
 <a name="setup"></a>
 ### Setup
