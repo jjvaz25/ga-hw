@@ -8,25 +8,56 @@ var jsonString = '{ "title": "Uploads from everyone", "link": "https://www.flick
 called `flickerObj`
 */
 
-
+let flickerObj = JSON.parse(jsonString);
+console.log(flickerObj);
 
 
 /*
 2. Iterate (this means 'use a loop') and do a console.log of each of the item titles
 with the date the photo was taken. The first console.log should return the following:
-
 "Edelweiss Air, Airbus A320-214, HB-IJU 2016-02-21T11:27:58-08:00"
-
 */
 
+let jsonItems = flickerObj.items;
+
+for (let i = 0; i < jsonItems.length; i++) {
+    console.log(jsonItems[i].title, jsonItems[i].date_taken);
+};
 
 /*
 3. Create a new array called 'links'. Iterate through the items array in flickerObj and store the the links to each item in the 'links' array.
 */
+
+let links = [];
+
+for (let i = 0; i <= jsonItems.length; i++) {
+    links.push(jsonItems[i].link);
+};
 
 
 
 /*
 4. Convert the 'links' array into a JSON string. Do a console.log of that JSON string, copy the results from the terminal and paste them into the input box at http://jsonlint.com/
 Did it create a valid JSON string?
-*/ 
+*/
+
+console.log(JSON.stringify(links[i]));
+
+
+// Hi Kyle, I keep getting the following error and I'm not sure what I need to change:
+
+/*
+let links = [];
+
+for (let i = 0; i <= jsonItems.length; i++) {
+    links.push(jsonItems[i].link);
+};
+VM1419:4 Uncaught TypeError: Cannot read property 'link' of undefined
+    at <anonymous>:4:29
+(anonymous) @ VM1419:4
+
+console.log(JSON.stringify(links[i]));
+VM1424:2 Uncaught ReferenceError: i is not defined
+    at <anonymous>:2:34
+(anonymous) @ VM1424:2
+*/
